@@ -5,7 +5,7 @@
   <a href="https://arxiv.org/pdf/2511.23002"><img src="https://img.shields.io/badge/arXiv-2511.23002-b31b1b.svg" alt="Paper"></a>
   <a href="https://jarvisart.vercel.app/"><img src="https://img.shields.io/badge/Project%20Page-Visit-blue" alt="Project Page"></a>
   <a href="https://huggingface.co/JarvisEvo/JarvisEvo"><img src="https://img.shields.io/badge/🤗-Model%20Weights-green.svg" alt="Model Weights"></a>
-  <a href="https://huggingface.co/datasets/JarvisArt/ArtEdit-Bench"><img src="https://img.shields.io/badge/🤗-ArtEdit--Bench-orange.svg" alt="ArtEdit-Bench"></a>
+  <a href="https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench/tree/main"><img src="https://img.shields.io/badge/🤗-ArtEdit--Bench-orange.svg" alt="ArtEdit-Bench"></a>
   </div>
 
 <div align="center">
