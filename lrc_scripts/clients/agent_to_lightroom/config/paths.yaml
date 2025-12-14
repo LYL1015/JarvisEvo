@@ -1,0 +1,18 @@
+# Example paths configuration
+# Modify these paths according to your setup
+
+# Sample photo and preset paths
+examples:
+  photo_path: "D:/xxx/house.jpg"
+  preset_path: "D:/xxx/config.lua"
+
+# Default paths (optional)
+defaults:
+  input_dir: "input/"
+  output_dir: "output/"
+  presets_dir: "presets/"
+  
+# File extensions
+supported_formats:
+  photos: [".jpg", ".png",".jpeg", ".dng", ".cr2", ".nef", ".tiff", ".tif"]
+  presets: [".lua"]

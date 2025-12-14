@@ -1,0 +1,45 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+freeze_vision_tower: true  # choices: [true, false]
+freeze_multi_modal_projector: true  # choices: [true, false]
+deepspeed: src/sft/examples/deepspeed/ds_z2_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
+
+### dataset
+dataset: [ArtEdit_REFLECT_cn, ArtEdit_REFLECT_en]
+template: qwen2_vl
+cutoff_len: 24576
+max_samples: 100000000
+overwrite_cache: true
+preprocessing_num_workers: 128
+dataloader_num_workers: 128
+
+### output
+output_dir: output/SFT/Qwen25VL
+logging_steps: 5
+save_steps: 400
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-5
+num_train_epochs: 5.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+
+max_grad_norm: 1.0
+gradient_checkpointing: true

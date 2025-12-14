@@ -1,0 +1,170 @@
+{
+  "ArtEdit_AIGC_SFT_cn": {
+    "file_name": "/path/to/project/data/ArtEdit_AIGC_SFT_cn.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "ArtEdit_AIGC_SFT_en": {
+    "file_name": "/path/to/project/data/ArtEdit_AIGC_SFT_en.json",
+    "formatting": "sharegpt",
+      "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "ArtEdit_LRC_SFT_global_cn": {
+    "file_name": "/path/to/project/data/ArtEdit_LRC_SFT_global_cn.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+
+  "ArtEdit_LRC_SFT_global_en": {
+    "file_name": "/path/to/project/data/ArtEdit_LRC_SFT_global_en.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+
+  "ArtEdit_LRC_SFT_local_cn": {
+    "file_name": "/path/to/project/data/ArtEdit_LRC_SFT_local_cn.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+},
+
+  "ArtEdit_LRC_SFT_local_en": {
+    "file_name": "/path/to/project/data/ArtEdit_LRC_SFT_local_en.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+},
+  "ArtEdit_EVAL_cn": {
+    "file_name": "/path/to/project/data/ArtEdit_EVAL_cn.json",
+    "formatting": "sharegpt",
+    "maskFlag": true,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+},
+  "ArtEdit_EVAL_en": {
+    "file_name": "/path/to/project/data/ArtEdit_EVAL_en.json",
+    "formatting": "sharegpt",
+    "maskFlag": true,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+},
+
+  "ArtEdit_REFLECT_cn": {
+    "file_name": "/path/to/project/data/ArtEdit_REFLECT_cn.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+    "ArtEdit_REFLECT_en": {
+    "file_name": "/path/to/project/data/ArtEdit_REFLECT_en.json",
+    "formatting": "sharegpt",
+    "maskFlag": false,
+    "columns": {
+      "messages": "messages",
+      "images": "images",
+      "system": "system"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+
+
+}
+

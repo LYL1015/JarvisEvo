@@ -1,0 +1,39 @@
+# Lightroom API Configuration
+
+# Socket connection settings
+socket:
+  host: "127.0.0.1"
+  port: 7878
+  timeout: null  # null means no timeout
+  keepalive:
+    idle: 60
+    interval: 60
+    count: 5
+
+# HTTP server settings
+http:
+  host: "127.0.0.1"
+  port: 8888
+  timeout: 30
+
+# Connection settings
+connection:
+  buffer_size: 4096
+  retry_count: 3
+  retry_delay: 1.0
+
+# Logging settings
+logging:
+  level: "INFO"
+  enable_file_log: true
+  log_file: "lightroom_api.log"
+
+# File upload settings
+upload:
+  max_file_size: 104857600  # 100MB in bytes
+  max_total_size: 209715200  # 200MB in bytes
+  allowed_photo_extensions: [".jpg", ".jpeg", ".png", ".dng", ".cr2", ".nef", ".tiff", ".tif", ".raw", ".arw"]
+  allowed_preset_extensions: [".lua", ".xmp"]
+  upload_dir: "uploads"  # Directory to store uploaded files (relative to project root)
+  keep_files: true  # Keep uploaded files after processing (set to false to auto-delete)
+  dir_prefix: "upload_"  # Prefix for upload subdirectories
