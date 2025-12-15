@@ -45,8 +45,8 @@
 > </p></details>
 
 ## 📮 News
-- **[2025.12.12]** 🎉 JarvisEvo's project page, paper are now available!
-- **[Coming Soon under internal review]** 🎯 Training, inference code  and model weight will be released.
+- **[2025.12.16]** 🎉 JarvisEvo's project page, paper are now available!
+
 
 ## 🎪 Open-source Plan
 
