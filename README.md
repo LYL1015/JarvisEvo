@@ -10,10 +10,10 @@
 
 <div align="center">
   <p>
-    <a href="https://lyl1015.github.io/">Yunlong Lin</a>, 
-    Linqing Wang, 
-    <a href="https://github.com/kunjie-lin">Kunjie Lin</a>, 
-    <a href="https://github.com/iendi">Zixu Lin</a>, 
+    <a href="https://lyl1015.github.io/">Yunlong Lin*</a>, 
+    Linqing Wang*, 
+    <a href="https://github.com/kunjie-lin">Kunjie Lin*</a>, 
+    <a href="https://github.com/iendi">Zixu Lin*</a>, 
     <a href="https://kxgong.github.io"> Kaixiong Gong, 
     <a href="https://fenglinglwb.github.io/">Wenbo Li</a>, 
     <a href="https://linb203.github.io/">Bin Lin</a>, 
@@ -21,9 +21,9 @@
     <a href="https://shiyi-zh0408.github.io/">Shiyi Zhang</a>, 
     <a href="https://github.com/1230young">Yuyang Peng</a>, 
     <a href="https://github.com/Dai-Wenxun">Wenxun Dai</a>, 
-    <a href="https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN">Xinghao Ding</a>, 
-    <a href="https://scholar.google.com/citations?user=VXQV5xwAAAAJ&hl=en">Chunyu Wang</a>, 
-    <a href="https://openreview.net/profile?id=~Qinglin_Lu2">Qinglin Lu</a>
+    <a href="https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN">Xinghao Ding♣</a>, 
+    <a href="https://scholar.google.com/citations?user=VXQV5xwAAAAJ&hl=en">Chunyu Wang†</a>, 
+    <a href="https://openreview.net/profile?id=~Qinglin_Lu2">Qinglin Lu†</a>
   </p>
 </div>
 
@@ -31,8 +31,7 @@
   <p>
     Xiamen University, Tencent Hunyuan
   </p>
-  <!-- <sup>*</sup>Equal Contributions <sup>♣</sup>Project Leader <sup>†</sup>Corresponding Author -->
-  <!-- <p>Accepted by CVPR 2025</p> -->
+  <sup>*</sup>Equal Contributions <sup>†</sup>Project Leader <sup>♣</sup>Corresponding Author
 </div>
 
 
