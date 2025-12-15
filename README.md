@@ -11,7 +11,8 @@
 <div align="center">
   <p>
     <a href="https://lyl1015.github.io/">Yunlong Lin<sup>*</sup></a>, 
-    Linqing Wang<sup>*</sup>, 
+    <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4z9rmDHYjp5o28xKk8U4ddD_n7BuMnk8UZFP-jygFBtHUSz6pf-5FP32B_yKMpRU9VpDY3iT8eM0zORHA&user=Hy12lcEAAAAJ">
+    Linqing Wang<sup>*</sup></a>, 
     <a href="https://github.com/kunjie-lin">Kunjie Lin<sup>*</sup></a>, 
     <a href="https://github.com/iendi">Zixu Lin<sup>*</sup></a>, 
     <a href="https://kxgong.github.io"> Kaixiong Gong, 
