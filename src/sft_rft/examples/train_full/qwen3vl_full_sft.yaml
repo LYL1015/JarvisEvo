@@ -21,7 +21,7 @@ preprocessing_num_workers: 128
 dataloader_num_workers: 128
 
 ### output
-output_dir: output/SFT//Qwen3VL
+output_dir: output/SFT/Qwen3VL
 logging_steps: 5
 save_steps: 400
 plot_loss: true
