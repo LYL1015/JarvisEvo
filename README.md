@@ -29,7 +29,7 @@
 
 <div align="center">
   <p>
-    Xiamen University, Tencent Hunyuan
+    Tencent Hunyuan, Xiamen University
   </p>
   <sup>*</sup>Equal Contributions <sup>†</sup>Project Leader <sup>♣</sup>Corresponding Author
 </div>
