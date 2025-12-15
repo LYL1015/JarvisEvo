@@ -141,7 +141,7 @@ For training, please follow:
 - [Training Guide](docs/README_training.md)
 
 For evaluation, please follow:
-- [Evaluation](./docs/README_Evaluation.md)
+- [Evaluation](./docs/README_evaluation.md)
 
 For Agent-to-Lightroom Protocol Detail, please follow:
 - [Agent-to-Lightroom Protocol](./lrc_scripts/clients/agent_to_lightroom/README.md)
