@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import tqdm
 from openai import OpenAI
-from json_repair import repair_json
+import ast
 
 from utils.lrc_tools import LightroomManager
 from utils.aigc_tools import AIGCManager
@@ -377,7 +377,7 @@ def reflect_and_improve(conversation_history, chat_model, image_manager,
 def _save_lua_preset(tool_call_json, output_path):
     """Convert JSON tool call to Lua preset file"""
     try:
-        json_data = json.loads(repair_json(tool_call_json))
+        json_data = ast.literal_eval(tool_call_json)
         lua_content = 'return ' + LuaConverter.to_lua(json_data)
     except Exception as e:
         print(f"⚠️ Lua conversion failed: {e}")
@@ -602,9 +602,9 @@ def _process_image(tool_call, task_type, current_image, image_manager,
         return output_path
     
     # Process based on task type
-    if task_type == "aigc":
+    if task_type == "aigc" and aigc_manager:
         processed = aigc_manager.call_img2img(current_image, tool_call, output_path)
-    else:
+    elif task_type=="lightroom" and image_manager:
         processed = image_manager.process_image(current_image, tool_call)
         
         # Save Lua preset
@@ -655,7 +655,10 @@ def process_single_image(path, image_base_path, chat_model, image_manager,
         # Find image file
         image_path = os.path.join(base_path, "before.jpg")
         if not os.path.exists(image_path):
-            image_path = os.path.join(base_path, "before.png")
+            for temp_in_Name in ["before.png", "input.jpg", "input.png"]:
+                image_path = os.path.join(base_path, temp_in_Name)
+                if os.path.exists(image_path):
+                    break
         
         if not os.path.exists(image_path):
             return f"⚠️ Skipped (no image): {path}"
@@ -704,7 +707,7 @@ def main():
     # API Configuration
     parser.add_argument("--api_endpoint", type=str, default="localhost", 
                        help="API server address")
-    parser.add_argument("--api_port", type=int, nargs='+', default=[8086, 8085], 
+    parser.add_argument("--api_port", type=int, nargs='+', default=[8086], 
                        help="API server port(s) for load balancing")
     parser.add_argument("--api_key", type=str, default="0", 
                        help="API authentication key")
@@ -712,7 +715,7 @@ def main():
                        help="AI model name")
     
     # Processing Configuration
-    parser.add_argument("--max_threads", type=int, default=20, 
+    parser.add_argument("--max_threads", type=int, default=10, 
                        help="Maximum concurrent threads")
     parser.add_argument("--task_type", type=str, default="lightroom", 
                        help="Processing mode: lightroom/aigc/auto")
@@ -722,7 +725,7 @@ def main():
                        help="Input image directory")
     parser.add_argument("--save_base_path", type=str, default=None,
                        help="Output directory for results")
-    parser.add_argument("--prompt_file_name", type=str, default="user_want_en.txt", 
+    parser.add_argument("--prompt_file_name", type=str, default="user_want.txt", 
                        help="User prompt filename")
     
     # AIGC Configuration
@@ -752,7 +755,10 @@ def main():
     
     # Initialize managers
     image_manager = LightroomManager() 
-    aigc_manager = AIGCManager(args.AIGC_model_pth, args.AIGC_device)
+    if args.AIGC_model_pth:
+        aigc_manager = AIGCManager(args.AIGC_model_pth, args.AIGC_device)
+    else:
+        aigc_manager = None
 
     # Get image list
     image_dirs = sorted(os.listdir(args.image_path))

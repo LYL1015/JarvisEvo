@@ -14,8 +14,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def readImage(image_path):
-    with Image.open(image_path) as img:
-        return img
+    return Image.open(image_path)
 
 
 def process_single_item(item, vie_score,  max_retries=20):

@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, 'viescore')
 
-from viescore_utils import (
+from .viescore_utils import (
     mllm_output_to_dict
 )
 import math

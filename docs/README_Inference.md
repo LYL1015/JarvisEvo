@@ -8,9 +8,8 @@ This guide provides instructions on how to run the batch inference for JarvisEvo
 conda create -n jarvisevo_infer python=3.11
 conda activate jarvisevo_infer
 pip install -r envs/requirements_infer.txt
-git submodule update --init 
-cd src/sft_rft
-pip install -e .
+# cd src/sft_rft
+# pip install -e .
 ```
 2. **Install Adobe Lightroom:** Please download and install Adobe Lightroom on your local machine from the [official website](https://www.adobe.com/products/photoshop-lightroom.html). After installation, sign in using your Adobe account credentials.
 
@@ -35,9 +34,12 @@ Once the environment is set up and activated, you can run the batch inference wi
 
 ```bash
 # Firstly, start the API server
-VLLM_WORKER_MULTIPROC_METHOD=spawn vllm serve ./checkpoints/pretrained/JarvisEvo --tensor-parallel-size 8 --port 8086 --api-key 0 --dtype float32 --served-model-name qwen3_vl --max_seq_len 20480 --limit-mm-per-prompt image=5
+VLLM_WORKER_MULTIPROC_METHOD=spawn vllm serve ./checkpoints/pretrained/JarvisEvo --tensor-parallel-size 8 --port 8086 --api-key 0 --served-model-name qwen3_vl --max_model_len 20480 --limit-mm-per-prompt.image 5
 
-
+# Next, set the environment variables for ```LIGHTROOM_RESULTS_DIR```.
+cd lrc_scripts/servers
+export LIGHTROOM_RESULTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lr_caches/results"
+cd ../..
 
 # Run the batch inference with full configuration
 python inference.py \

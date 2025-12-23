@@ -1,5 +1,4 @@
-vllm==0.9.1
-openai==1.86.0
+vllm==0.11.0
 tqdm==4.67.1
 json_repair==0.51.0
 diffusers==0.35.2

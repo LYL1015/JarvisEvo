@@ -9,13 +9,10 @@ import tempfile
 import logging
 from pathlib import Path
 import time
-from lua_converter import LuaConverter
-from json_repair import repair_json
+from .lua_converter import LuaConverter
 import threading
-# Set the visible CUDA device (adjust as necessary)
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+import ast
 
-# 配置日志
 logger = logging.getLogger(__name__)
 
 
@@ -60,7 +57,7 @@ class LightroomManager:
         os.makedirs(self.temp_base_dir, exist_ok=True)
         
         # Results directory configuration
-        self.results_base_dir = os.getenv('LIGHTROOM_RESULTS_DIR', '/apdcephfs_zwfy/share_303937731/lyl1015/projects/JarvisArt_Evo/lr_grpo_caches/lightroom_results')
+        self.results_base_dir = os.getenv('LIGHTROOM_RESULTS_DIR')
 
         self.max_concurrent = int(os.getenv('LIGHTROOM_MAX_CONCURRENT', '20'))
         self._semaphore = threading.Semaphore(self.max_concurrent)
@@ -128,7 +125,7 @@ class LightroomManager:
             lua_path = temp_dir / "config.lua"
             
             # Convert tool_call_content string to JSON first
-            json_content = json.loads(repair_json(tool_call_content))
+            json_content = ast.literal_eval(tool_call_content)
 
             lua_content = self.json_to_lua(json_content)
             with open(lua_path, 'w', encoding='utf-8') as f:
