@@ -6,6 +6,8 @@
   <a href="https://jarvisevo.vercel.app/"><img src="https://img.shields.io/badge/Project%20Page-Visit-blue" alt="Project Page"></a>
   <a href="https://huggingface.co/JarvisEvo/JarvisEvo"><img src="https://img.shields.io/badge/🤗-Model%20Weights-green.svg" alt="Model Weights"></a>
   <a href="https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench/tree/main"><img src="https://img.shields.io/badge/🤗-ArtEdit--Bench-orange.svg" alt="ArtEdit-Bench"></a>
+  <a href="https://mp.weixin.qq.com/s/oGhkzO7ZWB7vQab-mLPrAw"><img src="https://img.shields.io/badge/机器之心-报道-red.svg" alt="机器之心"></a>
+  <a href="https://mp.weixin.qq.com/s/DLwJqbiBmC5rrNscgHC-9Q"><img src="https://img.shields.io/badge/量子位-报道-purple.svg" alt="量子位"></a>
   </div>
 
 <div align="center">
@@ -45,6 +47,7 @@
 > </p></details>
 
 ## 📮 News
+- **[2025.12.29]** We are grateful for the coverage by 机器之心 ([link](https://mp.weixin.qq.com/s/oGhkzO7ZWB7vQab-mLPrAw)) and 量子位 ([link](https://mp.weixin.qq.com/s/DLwJqbiBmC5rrNscgHC-9Q)). Thank you for the support!
 - **[2025.12.16]** 🎉 JarvisEvo's project page, paper are now available!
 
 
