@@ -157,7 +157,7 @@ We would like to express our gratitude to [LLaMA-Factory](https://github.com/hiy
 
 ## 🌤️ Discussion Group
 
-If you have any questions during the trial, running or deployment, feel free to join our WeChat group discussion! If you have any ideas or suggestions for the project, you are also welcome to join our WeChat group discussion!
+If you have any questions during the trial, running or deployment, feel free to join our WeChat group discussion! 
 
 <div align="center">
   <table>
