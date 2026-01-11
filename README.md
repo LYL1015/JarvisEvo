@@ -50,6 +50,21 @@
 - **[2025.12.29]** We are grateful for the coverage by 机器之心 ([link](https://mp.weixin.qq.com/s/oGhkzO7ZWB7vQab-mLPrAw)) and 量子位 ([link](https://mp.weixin.qq.com/s/DLwJqbiBmC5rrNscgHC-9Q)). Thank you for the support!
 - **[2025.12.16]** 🎉 JarvisEvo's project page, paper are now available!
 
+## 📦 Model Weights and Datasets
+
+| Resource | Type | Size | Download Link | Description |
+|----------|------|------|---------------|-------------|
+| **JarvisEvo** | Model Weights | ~14GB | [🤗 Hugging Face](https://huggingface.co/JarvisEvo/JarvisEvo) | Main model checkpoint for JarvisEvo |
+| **ArtEdit-Bench** | Dataset | ~1GB | [🤗 Hugging Face](https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench) | Evaluation benchmark dataset |
+
+**Quick Download Commands:**
+```bash
+# Download model weights
+huggingface-cli download JarvisEvo/JarvisEvo --local-dir ./checkpoints/pretrained/JarvisEvo
+
+# Download datasets
+huggingface-cli download JarvisEvo/ArtEdit-Bench --repo-type dataset --local-dir ./datasets/ArtEdit-Bench
+```
 
 ## 🎪 Open-source Plan
 
