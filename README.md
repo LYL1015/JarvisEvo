@@ -54,7 +54,7 @@
 
 | Resource | Type | Size | Download Link | Description |
 |----------|------|------|---------------|-------------|
-| **JarvisEvo** | Model Weights | ~14GB | [🤗 Hugging Face](https://huggingface.co/JarvisEvo/JarvisEvo) | Main model checkpoint for JarvisEvo |
+| **JarvisEvo-8B** | Model Weights | ~17GB | [🤗 Hugging Face](https://huggingface.co/JarvisEvo/JarvisEvo) | Main model checkpoint for JarvisEvo |
 | **ArtEdit-Bench** | Dataset | ~1GB | [🤗 Hugging Face](https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench) | Evaluation benchmark dataset |
 
 **Quick Download Commands:**
