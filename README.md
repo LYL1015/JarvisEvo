@@ -47,8 +47,9 @@
 > </p></details>
 
 ## 📮 News
+- **[2026.02.21]** 🎉 JarvisEvo has been accepted by CVPR 2026!
 - **[2025.12.29]** We are grateful for the coverage by 机器之心 ([link](https://mp.weixin.qq.com/s/oGhkzO7ZWB7vQab-mLPrAw)) and 量子位 ([link](https://mp.weixin.qq.com/s/DLwJqbiBmC5rrNscgHC-9Q)). Thank you for the support!
-- **[2025.12.16]** 🎉 JarvisEvo's project page, paper are now available!
+- **[2025.12.16]** JarvisEvo's project page, paper are now available!
 
 ## 📦 Model Weights and Datasets
 
@@ -216,9 +217,6 @@ If you find JarvisEvo useful in your research, please consider citing:
 ---
 
 ## 📜 License
-
-JarvisEvo is released under the [Apache License 2.0](LICENSE), **but commercial use is explicitly prohibited**. While the Apache 2.0 license typically allows free use, modification, and distribution of code, for this project we specifically declare: ## License
-
 The **JarvisEvo** model weights, inference code, and associated materials are made freely available by Yunlong Lin for academic research, personal study, and other non-commercial uses under the **JarvisEvo Non-Commercial License**.
 
 By downloading, accessing, or using the JarvisEvo model, you agree to the terms of this license. Please refer to the [`JarvisEvo Non-Commercial License v1.0`](LICENSE) file in this repository for the full terms and conditions.
