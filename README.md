@@ -217,4 +217,10 @@ If you find JarvisEvo useful in your research, please consider citing:
 
 ## 📜 License
 
-JarvisEvo is released under the [Apache License 2.0](LICENSE), but commercial use is explicitly prohibited. While the Apache 2.0 license typically allows free use, modification, and distribution of code, for this project we specifically declare: commercial use of JarvisEvo and its related code, models, and datasets is forbidden.
+JarvisEvo is released under the [Apache License 2.0](LICENSE), **but commercial use is explicitly prohibited**. While the Apache 2.0 license typically allows free use, modification, and distribution of code, for this project we specifically declare: ## License
+
+The **JarvisEvo** model weights, inference code, and associated materials are made freely available by Yunlong Lin for academic research, personal study, and other non-commercial uses under the **JarvisEvo Non-Commercial License**.
+
+By downloading, accessing, or using the JarvisEvo model, you agree to the terms of this license. Please refer to the [`JarvisEvo Non-Commercial License v1.0`](LICENSE) file in this repository for the full terms and conditions.
+
+**Commercial Use:** If you wish to use the JarvisEvo model or its derivatives for commercial purposes, please contact me at [linyl@stu.xmu.edu.cn] to request a commercial license.
